@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,44 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <title>Neshco pizza</title>
 </head>
+
 <body>
     <div class="container">
-    <h1>Neshco pizza</h1>
-    
-    <form>
-            <div class= "col-md-6">
-        <label for="size">size of pizza</label>
-        <input type="text"  class="form-control" id="size">
-    </div>
+        <h1>Neshco pizza</h1>
+
+        <form>
+            <div class="col-md-6">
+
+                <label>Please select size of pizza</label>
+                <select class="form-control">
+                    <option value="size">Small</option>
+                    <option value="size">Medium</option>
+                    <option value="size">Large</option>
+
+                </select>
+
+                <label>Please select crust of pizza</label>
+                <select class="form-control">
+                    <option value="size">Crispy</option>
+                    <option value="size">Stuffed</option>
+                    <option value="size">Gluten-free</option>
+
+                </select>
+
+                <label>Please choose the toppings</label>
+                <br>
+                <input type="checkbox" id="pineapple">pineapple</input>
+                <input type="checkbox" id="beacon" >beacon</input>
+                <input type="checkbox" id="beef">beef</input>
 
 
-    </form>
+
+            </div>
+
+
+        </form>
     </div>
-    
+
 </body>
+
 </html>
