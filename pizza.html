@@ -13,39 +13,48 @@
     <div class="container">
         <h1>Neshco pizza</h1>
 
-        <form>
+        <form >
             <div class="col-md-6">
+                <div class="nop">
 
                 <label>Please select size of pizza</label>
-                <select class="form-control">
-                    <option value="size">Small</option>
-                    <option value="size">Medium</option>
-                    <option value="size">Large</option>
+                <select class="form-control" id="size">
+                    <option value="small" class="small">Small</option>
+                    <option value="medium" class="medium">Medium</option>
+                    <option value="large" class="large">Large</option>
 
                 </select>
+                </div>
 
                 <label>Please select crust of pizza</label>
-                <select class="form-control">
-                    <option value="size">Crispy</option>
-                    <option value="size">Stuffed</option>
-                    <option value="size">Gluten-free</option>
+                <select class="form-control" id="crust">
+                    <option value="crispy" class="Crispy">Crispy</option>
+                    <option value="stuffed" class="Stuffed">Stuffed</option>
+                    <option value="Gluten-free" class="Gluten-free">Gluten-free</option>
 
                 </select>
 
                 <label>Please choose the toppings</label>
                 <br>
+                <div class="input">
                 <input type="checkbox" id="pineapple">pineapple</input>
-                <input type="checkbox" id="beacon" >beacon</input>
+                <input type="checkbox" id="beacon">beacon</input>
                 <input type="checkbox" id="beef">beef</input>
+                </div>
+
+                <br>
 
 
-
-            </div>
+            <input type="submit" value="submit">
+            </div>           
 
 
         </form>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
