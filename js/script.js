@@ -14,6 +14,13 @@ function Topping(pineapple, beacon,beef) {
   this.beef = beef
 }
 
+function resetFields() {
+  $("#size").val();
+ $("#crust").val();
+ $("input[type='checkbox']").val()
+
+}
+
 
 
 //user interface logic
@@ -22,12 +29,12 @@ $("form").submit(function(){
   event.preventDefault();
   var  pizzaSize = $("#size").val()
   var pizzaCrust = $("#crust").val()
+  var pizzaTopping = $("input[type='checkbox']").val()
   var pizza=new Pizza(pizzaSize,pizzaCrust,pizzaTopping)
 
-  function topping()
-  var toppings=[beef,pineapple,beacon]
-  {}
-  
+
+  alert("Please confirm that you have chosen a "+pizzaSize)
+
   
   
 })

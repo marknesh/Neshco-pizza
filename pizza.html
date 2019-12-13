@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
     <title>Neshco pizza</title>
 </head>
 
-<body>
-    <div class="container">
-        <h1>Neshco pizza</h1>
 
-        <form >
-            <div class="col-md-6">
-                <div class="nop">
+<body>
+        <div class="container">    
+    <h1 class="headerText">Neshco pizza</h1>
+    <marquee scrollamount="10">We serve the tastiest pizza</marquee>
+    <form>
+        <div class="col-md-6">
+            <div class="nop">
 
                 <label>Please select size of pizza</label>
                 <br>
@@ -25,41 +28,45 @@
                     <option value="large" class="large">Large</option>
 
                 </select>
-                </div>
-        
+            </div>
 
-                <label>Please select crust of pizza</label>
-                <select class="form-control" id="crust">
-                    <option value="crispy" class="Crispy">Crispy</option>
-                    <option value="stuffed" class="Stuffed">Stuffed</option>
-                    <option value="Gluten-free" class="Gluten-free">Gluten-free</option>
 
-                </select>
+            <label>Please select crust of pizza</label>
+            <select class="form-control" id="crust">
+                <option value="crispy" class="Crispy">Crispy</option>
+                <option value="stuffed" class="Stuffed">Stuffed</option>
+                <option value="Gluten-free" class="Gluten-free">Gluten-free</option>
 
-                <label>Please choose the toppings</label>
-                <br>
-                <div class="input">
+            </select>
+
+            <label>Please choose the toppings</label>
+            <br>
+            <div class="input">
                 <input type="checkbox" id="pineapple">pineapple</input>
                 <input type="checkbox" id="beacon">beacon</input>
                 <input type="checkbox" id="beef">beef</input>
-                </div>
+            </div>
 
-                <br>
-                PLease enter the number of pizzas you want:
-                <br>
-                <input type="number" min="1" max="8">
-                <br>
-                <br>
+            <br>
+            PLease enter the number of pizzas you want:
+            <br>
+            <input type="number" min="1" max="8">
+            <br>
+            <br>
             <input type="submit" value="checkout">
-            </div>           
+        </div>
 
 
-        </form>
-    </div>
+    </form>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+</div>
+    
+
 </body>
+
 
 </html>
