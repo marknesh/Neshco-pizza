@@ -1,9 +1,16 @@
-body{}
+body,html{height: 100%;}
+
 .headerText{text-align:center;
+    background-image: url("images/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    color: seashell;
 font-size:4em;}
 
-.container{background-color: white;
-height: 700px;
-background-color:blueviolet;}
+.container{background-color: brown;
+height: 900px;
+
+}
 
 marquee{color:whitesmoke;}
