@@ -24,10 +24,9 @@ $("form").submit(function(){
   var pizzaCrust = $("#crust").val()
   var pizza=new Pizza(pizzaSize,pizzaCrust,pizzaTopping)
 
-
-  
-  
-   
+  function topping()
+  var toppings=[beef,pineapple,beacon]
+  {}
   
   
   
