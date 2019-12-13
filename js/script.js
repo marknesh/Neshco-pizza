@@ -23,9 +23,12 @@ $("form").submit(function(){
   var  pizzaSize = $("#size").val()
   var pizzaCrust = $("#crust").val()
   var pizza=new Pizza(pizzaSize,pizzaCrust,pizzaTopping)
+
+
+  
   
    
-  alert("Please confirm that you have chosen a "+pizzaSize+ " pizza with a "+pizzaCrust+" crust" + pizzaTopping )
+  
   
   
 })
