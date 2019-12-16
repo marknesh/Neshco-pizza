@@ -43,17 +43,21 @@
             <label>Please choose the toppings</label>
             <marquee>PLEASE NOTE THAT THE TOPPINGS PRICE DEPENDS ON THE SIZE OF PIZZA</marquee>
             <br>
-            <div class="gopp">
+            
            <input type="radio" name="topp" value="40" >Beef
+           
+        
            <input type="radio" name="top" value="50" >Pineapple
+           
+        
            <input type="radio" name="to" value="60">Beacon
-         </div>
+           <br>
+         
          <label>Do you want the pizza to be delivered</label>
          <div class="delivered">
          <input type="radio" name="deliver" value="250" >Yes
-         <input type="radio" name="deliver" value="0" >No
-         </div>var toppingff=ParseInt($(".gopp :checked").val())
-         alert(toppingff)
+         <input type="radio" name="deliver" value="0" required>No
+         </div>
          
 
          

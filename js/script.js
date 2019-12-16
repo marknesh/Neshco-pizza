@@ -49,30 +49,53 @@ $(".showCheckout").text(sizePizza)
 var crustPrice =parseInt($("#crusta option:selected").val())
 $(".showCrust").text(crustPrice)
 
- var deliver=200
+ 
 
 var beef=parseInt($("input[name='topp']:checked").val())
 var pineapple=parseInt($("input[name='top']:checked").val())
 var beacon=parseInt($("input[name='to']:checked").val())
+alert(beacon)
 
 
-
-$(".showBeef").text((beef))
-$(".showPineapple").text(pineapple)
-$(".showBeacon").text(beacon)
-var topping=parseInt($(".gopp :checked").val())
-alert(topping)
-
-var yes=$("input[name='deliver']:checked").val()
-var no=$("input[name='deliver']:checked").val()
 
 var delivery=parseInt($(".delivered :checked").val())
+$(".deliveryFee").text(delivery)
 
 
 var numberPizza=parseInt($("#total").val())
 
+$(".showBeef").text((beef))
+$(".showPineapple").text(pineapple)
+$(".showBeacon").text(beacon)
 
-$(".total").text((crustPrice+sizePizza+delivery+topping)*numberPizza)
+ 
+
+ if(beef==40 && pineapple==50){
+  $(".showBeacon").hide()
+  $(".titleBeacon").hide()
+  $(".total").text((sizePizza+crustPrice+beef+pineapple+delivery)*numberPizza)
+
+}
+
+ if(beef==40&&beacon==60){
+  $(".showPineapple").hide()
+  $(".titlePineapple").hide()
+  $(".total").text((sizePizza+crustPrice+beef+beacon+delivery)*numberPizza)
+
+}
+if(beacon==60&&pineapple==50)
+{
+  $(".showBeef").hide()
+  $(".titleBeef").hide()
+  $(".total").text((sizePizza+crustPrice+beef+pineapple+delivery)*numberPizza)
+}
+
+
+
+
+
+
+
 
 
 })
