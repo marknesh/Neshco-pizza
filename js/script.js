@@ -52,7 +52,7 @@ $(".showCheckout").text(mediumPrice)
 if(pizzaSize=="large")
 $(".showCheckout").text(largePrice)
 
-var crispyPrice=100
+var crispyPrice=200
 var stuffedPrice=200
 var gluttenPrice=300
 if(pizzaCrust=="crispy")
@@ -64,7 +64,7 @@ var beacon=60
 
 
 
-if(pizzaTopping=="beef"  &&pizzaSize=="small" &&pizzaCrust=="crispy")
+if(pizzaSize=="small" &&pizzaTopping=="beef"  &&pizzaCrust=="crispy")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
 $(".total").text(smallPrice+beef+crispyPrice)
@@ -83,9 +83,10 @@ $(".showBeef").text(beef)
 $(".titleBeef").show()
 
 
-if(pizzaTopping=="pineapple" &&pizzaSize=="small")
+if(pizzaSize=="small" &&pizzaTopping=="pineapple"&&pizzaCrust=="crispy")
 $(".showPineapple").text(pineapple)
 $(".titlePineapple").show()
+$(".total").text(smallPrice+pineapple+crispyPrice)
 
 
 
@@ -100,9 +101,10 @@ $(".showPineapple").text(pineapple)
 $(".titlePineapple").show()
 
 
-if(pizzaTopping=="beacon" &&pizzaSize=="small")
+if(pizzaSize=="small"&&pizzaTopping=="beef" &&pizzaCrust=="crispy")
 $(".showBeacon").text(beacon)
 $(".titleBeacon").show()
+$(".total").text(smallPrice+beacon+crispyPrice)
 
 
 if(pizzaTopping=="beacon" &&pizzaSize=="medium")
