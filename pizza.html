@@ -16,16 +16,18 @@
         <div class="container">    
     <h1 class="headerText">Neshco pizza</h1>
     <marquee scrollamount="10">We serve the tastiest pizza</marquee>
-    <form>
+    <form >
+        <div class="row">
         <div class="col-md-6">
             <div class="nop">
 
                 <label>Please select size of pizza</label>
                 <br>
                 <select class="form-control" id="size">
-                    <option value="small" class="small">Small</option>
-                    <option value="medium" class="medium">Medium</option>
-                    <option value="large" class="large">Large</option>
+
+                    <option value="small" class="small">Small.......................price@ ksh500</option>
+                    <option value="medium" class="medium">Medium.............price@ ksh1000</option>
+                    <option value="large" class="large">Large.................price@ ksh2500</option>
 
                 </select>
             </div>
@@ -33,24 +35,26 @@
 
             <label>Please select crust of pizza</label>
             <select class="form-control" id="crust">
-                <option value="crispy" class="Crispy">Crispy</option>
-                <option value="stuffed" class="Stuffed">Stuffed</option>
-                <option value="Gluten-free" class="Gluten-free">Gluten-free</option>
+                <option value="crispy" class="Crispy">Crispy.......................price@ ksh200</option>
+                <option value="stuffed" class="Stuffed">Stuffed......................price@ ksh300</option>
+                <option value="Gluten-free" class="Gluten-free">Gluten-free................price@ ksh300</option>
 
             </select>
-
             <label>Please choose the toppings</label>
+            <marquee>PLEASE NOTE THAT THE TOPPINGS PRICE DEPENDS ON THE SIZE OF PIZZA</marquee>
             <br>
-            <div class="input">
-                <input type="checkbox" id="pineapple">pineapple</input>
-                <input type="checkbox" id="beacon">beacon</input>
-                <input type="checkbox" id="beef">beef</input>
-            </div>
+            <select multiple class="form-control" id="topping">
+                    <option value="beef" class="beef">Beef</option>
+                    <option value="pineapple" class="pineapple">Pineapple</option>
+                    <option value="beacon" class="beacon">Beacon</option>
+    
+                </select>
+         
 
             <br>
             PLease enter the number of pizzas you want:
             <br>
-            <input type="number" min="1" max="8">
+            <input type="number" min="1" max="20">
             <br>
             <br>
             <input type="submit" value="checkout">
@@ -58,6 +62,33 @@
 
 
     </form>
+
+    <div class="col-md-6">
+        <div class="hide">
+        <div class="showHeader">Total amount to be paid is:</div>
+        <div>Pizza size price
+        <div class="showCheckout"> </div>
+        </div>
+        <div>Crust price
+        <div class="showCrust"></div>
+        </div>
+        <div class="titleBeef">Beef topping price: 
+        <div class="showBeef"></div>
+        </div>
+        <div class="titlePineapple" > Pineapple topping price:
+        <div class="showPineapple"></div>
+        </div>
+        <div class="titleBeacon">Beacon topping price:
+        <div class="showBeacon"> </div>
+        </div>
+        </div>
+    
+
+        </div>
+
+        
+
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"

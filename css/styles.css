@@ -8,9 +8,34 @@ body,html{height: 100%;}
     color: seashell;
 font-size:4em;}
 
+.showHeader{display: none;}
+
 .container{background-color: brown;
 height: 900px;
 
 }
 
+.showCheckout{margin-left: 160px;
+    margin-top: -26px;}
+.showBeef{margin-left: 160px;
+    margin-top: -31px;
+padding: 10px;}
+
+.showPineapple{margin-left: 170px;
+    margin-top: -31px;
+    padding: 10px;
+    
+    }
+
+    .showBeacon{margin-left: 160px;
+        margin-top: -31px;
+        padding: 10px;
+        
+        }
+        .titleBeef{display: none;
+        }
+        .titlePineapple{display: none;}
+        .titleBeacon{display: none;}
+
+        .hide{display: none;}
 marquee{color:whitesmoke;}
