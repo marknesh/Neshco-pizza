@@ -23,41 +23,40 @@
 
                 <label>Please select size of pizza</label>
                 <br>
-                <select class="form-control" id="size">
+                <select class="form-control" id="size" required>
 
-                    <option value="small" class="small">Small.......................price@ ksh500</option>
-                    <option value="medium" class="medium">Medium.............price@ ksh1000</option>
-                    <option value="large" class="large">Large.................price@ ksh2500</option>
+                    <option value="500" class="small">Small.......................price@ ksh500</option>
+                    <option value="1500" class="medium">Medium.............price@ ksh1000</option>
+                    <option value="2000" class="large">Large.................price@ ksh2500</option>
 
                 </select>
             </div>
 
 
             <label>Please select crust of pizza</label>
-            <select class="form-control" id="crust">
-                <option value="crispy" class="Crispy">Crispy.......................price@ ksh200</option>
-                <option value="stuffed" class="Stuffed">Stuffed......................price@ ksh300</option>
-                <option value="Gluten-free" class="Gluten-free">Gluten-free................price@ ksh300</option>
+            <select class="form-control" id="crusta"required>
+                <option value="200" class="Crispy"  >Crispy.......................price@ ksh200</option>
+                <option value="300" class="Stuffed">Stuffed......................price@ ksh300</option>
+                <option value="300" class="Gluten-free">Gluten-free................price@ ksh300</option>
 
             </select>
             <label>Please choose the toppings</label>
             <marquee>PLEASE NOTE THAT THE TOPPINGS PRICE DEPENDS ON THE SIZE OF PIZZA</marquee>
             <br>
-            <select multiple class="form-control" id="topping">
-                    <option value="beef" class="beef">Beef</option>
-                    <option value="pineapple" class="pineapple">Pineapple</option>
-                    <option value="beacon" class="beacon">Beacon</option>
-    
-                </select>
-         
+            <div id="gopp">
+           <input type="radio" name="topp" value="40" >Beef
+           <input type="radio" name="top" value="50" >Pineapple
+           <input type="radio" name="to" value="60">Beacon
+         </div>
 
             <br>
             PLease enter the number of pizzas you want:
             <br>
-            <input type="number" min="1" max="20">
+            <input type="number" id="total" min="1" max="20" required>
             <br>
             <br>
-            <input type="submit" value="checkout">
+            <button onClick="window.location.href=window.location.href">Order another pizza</button>
+            <input type="submit" value="checkout" >
         </div>
 
 
