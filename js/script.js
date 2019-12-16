@@ -67,7 +67,6 @@ var beacon=60
 if(pizzaTopping=="beef" &&pizzaSize=="small")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
-$(".titlePineapple").hide()
 
 
 
@@ -75,13 +74,11 @@ $(".titlePineapple").hide()
 if(pizzaTopping=="beef" &&pizzaSize=="medium")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
-$(".titlePineapple").hide()
 
 
 if(pizzaTopping=="beef" &&pizzaSize=="large")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
-$(".titlePineapple").hide()
 
 
 if(pizzaTopping=="pineapple" &&pizzaSize=="small")
