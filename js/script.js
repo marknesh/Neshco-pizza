@@ -45,11 +45,11 @@ var largePrice=2500
 if(pizzaSize=="small")
 $(".showCheckout").text(smallPrice);
 
-else if(pizzaSize=="medium")
+ if(pizzaSize=="medium")
 $(".showCheckout").text(mediumPrice)
 
 
-else (pizzaSize=="large")
+if(pizzaSize=="large")
 $(".showCheckout").text(largePrice)
 
 var crispyPrice=100
@@ -64,14 +64,16 @@ var beacon=60
 
 
 
-if(pizzaTopping=="beef" &&pizzaSize=="small")
+if(pizzaTopping=="beef"  &&pizzaSize=="small" &&pizzaCrust=="crispy")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
+$(".total").text(smallPrice+beef+crispyPrice)
 
 
 
 
-if(pizzaTopping=="beef" &&pizzaSize=="medium")
+
+if(pizzaTopping=="beef" &&pizzaSize=="medium" &&pizzaCrust=="crispy")
 $(".showBeef").text(beef)
 $(".titleBeef").show()
 
@@ -84,6 +86,7 @@ $(".titleBeef").show()
 if(pizzaTopping=="pineapple" &&pizzaSize=="small")
 $(".showPineapple").text(pineapple)
 $(".titlePineapple").show()
+
 
 
 if(pizzaTopping=="pineapple" &&pizzaSize=="medium")
@@ -111,14 +114,6 @@ $(".titleBeacon").show()
 if(pizzaTopping=="beacon" &&pizzaSize=="large")
 $(".showBeacon").text(beacon)
 $(".titleBeacon").show()
-
-
-
-
-
-
-
-
 
 
 })
