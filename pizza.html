@@ -43,11 +43,21 @@
             <label>Please choose the toppings</label>
             <marquee>PLEASE NOTE THAT THE TOPPINGS PRICE DEPENDS ON THE SIZE OF PIZZA</marquee>
             <br>
-            <div id="gopp">
+            <div class="gopp">
            <input type="radio" name="topp" value="40" >Beef
            <input type="radio" name="top" value="50" >Pineapple
            <input type="radio" name="to" value="60">Beacon
          </div>
+         <label>Do you want the pizza to be delivered</label>
+         <div class="delivered">
+         <input type="radio" name="deliver" value="250" >Yes
+         <input type="radio" name="deliver" value="0" >No
+         </div>var toppingff=ParseInt($(".gopp :checked").val())
+         alert(toppingff)
+         
+
+         
+
 
             <br>
             PLease enter the number of pizzas you want:
@@ -55,8 +65,9 @@
             <input type="number" id="total" min="1" max="20" required>
             <br>
             <br>
+
+            <input type="submit" value="checkout" onclick="doClear()">
             <button onClick="window.location.href=window.location.href">Order another pizza</button>
-            <input type="submit" value="checkout" >
         </div>
 
 
@@ -80,9 +91,13 @@
         <div class="titleBeacon">Beacon topping price:
         <div class="showBeacon"> </div>
         </div>
+        <div>Delivery Fee
+                <div class="deliveryFee"></div>
+            </div>
         <div>Total
         <div class="total"></div>
         </div>
+       
         </div>
     
 
@@ -95,7 +110,9 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+    function myFunction(){}
+    </script>
 
     
 </body>

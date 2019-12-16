@@ -31,6 +31,9 @@ function resetFields() {
 
 //user interface logic
 
+
+
+
 $("form").submit(function(){
   event.preventDefault();  
   var  pizzaSize = $("#size").val()
@@ -46,6 +49,7 @@ $(".showCheckout").text(sizePizza)
 var crustPrice =parseInt($("#crusta option:selected").val())
 $(".showCrust").text(crustPrice)
 
+ var deliver=200
 
 var beef=parseInt($("input[name='topp']:checked").val())
 var pineapple=parseInt($("input[name='top']:checked").val())
@@ -56,17 +60,28 @@ var beacon=parseInt($("input[name='to']:checked").val())
 $(".showBeef").text((beef))
 $(".showPineapple").text(pineapple)
 $(".showBeacon").text(beacon)
+var topping=parseInt($(".gopp :checked").val())
+alert(topping)
+
+var yes=$("input[name='deliver']:checked").val()
+var no=$("input[name='deliver']:checked").val()
+
+var delivery=parseInt($(".delivered :checked").val())
 
 
 var numberPizza=parseInt($("#total").val())
 
-$(".total").text((crustPrice+sizePizza)*numberPizza)
 
-
-
+$(".total").text((crustPrice+sizePizza+delivery+topping)*numberPizza)
 
 
 })
+
+
+
+
+
+
 
  
   
