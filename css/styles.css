@@ -26,16 +26,23 @@ padding: 10px;}
     padding: 10px;
     
     }
+    .showCrust{
+        margin-left: 160px;
+        margin-top: -20px;
+    }
 
     .showBeacon{margin-left: 160px;
         margin-top: -31px;
         padding: 10px;
         
         }
-        .titleBeef{display: none;
+        .titleBeef{display: hidden;
+            padding: 10px;
         }
-        .titlePineapple{display: none;}
-        .titleBeacon{display: none;}
+        .titlePineapple{display: hidden;
+            padding: 10px;}
+        .titleBeacon{display: hidden;
+            padding: 10px;}
 
         .hide{display: none;}
 marquee{color:whitesmoke;}
