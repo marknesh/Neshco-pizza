@@ -37,8 +37,9 @@ $("form").submit(function(){
   var pizzaCrust = $("#crust").val()
   var pizzaTopping = $("#topping").val()
   var pizza=new Pizza(pizzaSize,pizzaCrust,pizzaTopping)
-  alert(pizza.size)
+  
 $(".hide").show()
+
 var smallPrice=500
 var mediumPrice=1000
 var largePrice=2500
@@ -64,58 +65,63 @@ var beacon=60
 
 
 
-if(pizzaSize=="small" &&pizzaTopping=="beef"  &&pizzaCrust=="crispy")
+if(pizzaSize=="small" &&pizzaTopping=="beef"  &&pizzaCrust=="crispy"){
 $(".showBeef").text(beef)
 $(".titleBeef").show()
-$(".total").text(smallPrice+beef+crispyPrice)
+$(".total").text(smallPrice+crispyPrice+beef);return}
 
 
 
 
-
-if(pizzaTopping=="beef" &&pizzaSize=="medium" &&pizzaCrust=="crispy")
+if(pizzaTopping=="beef" &&pizzaSize=="medium" &&pizzaCrust=="crispy"){
 $(".showBeef").text(beef)
 $(".titleBeef").show()
+$(".total").text(mediumPrice+crispyPrice+beef)}
 
 
-if(pizzaTopping=="beef" &&pizzaSize=="large")
+if(pizzaTopping=="beef" &&pizzaSize=="large"){
 $(".showBeef").text(beef)
 $(".titleBeef").show()
+$(".total").text(largePrice+crispyPrice+beef)}
 
 
-if(pizzaSize=="small" &&pizzaTopping=="pineapple"&&pizzaCrust=="crispy")
+if(pizzaSize=="small" &&pizzaTopping=="pineapple"&&pizzaCrust=="crispy"){
 $(".showPineapple").text(pineapple)
 $(".titlePineapple").show()
-$(".total").text(smallPrice+pineapple+crispyPrice)
+$(".total").text(smallPrice+pineapple+crispyPrice)}
 
 
 
-if(pizzaTopping=="pineapple" &&pizzaSize=="medium")
+if(pizzaTopping=="pineapple" &&pizzaSize=="medium"){
 $(".showPineapple").text(pineapple)
-$(".titlePineapple").show()
+$(".titlePineapple").show()}
 
 
 
-if(pizzaTopping=="pineapple" &&pizzaSize=="large")
+if(pizzaTopping=="pineapple" &&pizzaSize=="large"){
 $(".showPineapple").text(pineapple)
-$(".titlePineapple").show()
+$(".titlePineapple").show()}
 
 
-if(pizzaSize=="small"&&pizzaTopping=="beef" &&pizzaCrust=="crispy")
+if(pizzaSize=="small"&&pizzaTopping=="beacon" &&pizzaCrust=="crispy"){
 $(".showBeacon").text(beacon)
 $(".titleBeacon").show()
-$(".total").text(smallPrice+beacon+crispyPrice)
+$(".total").text(smallPrice+beacon +crispyPrice)}
 
 
-if(pizzaTopping=="beacon" &&pizzaSize=="medium")
+if(pizzaTopping=="beacon" &&pizzaSize=="medium"){
 $(".showBeacon").text(beacon)
-$(".titleBeacon").show()
+$(".titleBeacon").show()}
 
 
 
-if(pizzaTopping=="beacon" &&pizzaSize=="large")
+if(pizzaTopping=="beacon" &&pizzaSize=="large"){
 $(".showBeacon").text(beacon)
-$(".titleBeacon").show()
+$(".titleBeacon").show()}
+
+
+  
+
 
 
 })

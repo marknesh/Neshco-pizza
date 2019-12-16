@@ -15,34 +15,40 @@ height: 900px;
 
 }
 
-.showCheckout{margin-left: 160px;
-    margin-top: -26px;}
-.showBeef{margin-left: 160px;
+.showCheckout{margin-left: 190px;
+    margin-top: -26px;
+;}
+.showBeef{margin-left: 190px;
     margin-top: -31px;
 padding: 10px;}
 
-.showPineapple{margin-left: 170px;
+.showPineapple{margin-left: 190px;
     margin-top: -31px;
     padding: 10px;
     
     }
     .showCrust{
-        margin-left: 160px;
+        margin-left: 190px;
         margin-top: -20px;
+        ;
     }
 
-    .showBeacon{margin-left: 160px;
+    .showBeacon{margin-left: 190px;
         margin-top: -31px;
         padding: 10px;
         
         }
         .titleBeef{display: hidden;
-            padding: 10px;
+            padding-bottom: 10px
+;
         }
         .titlePineapple{display: hidden;
-            padding: 10px;}
+            padding-bottom: 10px;}
         .titleBeacon{display: hidden;
-            padding: 10px;}
+            padding-bottom: 10px;}
+            .total{margin-left: 190px;
+                margin-top: -31px;
+                padding: 10px;}
 
         .hide{display: none;}
 marquee{color:whitesmoke;}
