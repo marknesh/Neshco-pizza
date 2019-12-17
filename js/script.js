@@ -93,8 +93,6 @@ var lbeacon=(beacon+30)
 var lcheese=(cheese+30)
 
 
-alert(cheese)
-
 if(sizePizza==500)
 {$(".showBeef").text(beef)
 $(".showBeacon").text(beacon)
