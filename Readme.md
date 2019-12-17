@@ -7,6 +7,10 @@ Neshco Pizza
 This is website for ordering  pizza of different sizes and toppings depending on the customer's  preference.This project uses html and css to style,also bootstrap is used here.I also used jquery to make it responsive.
 
 ## Operating
+To view the website please click the link provided above.
+Then choose the pizza you want using the dropdown select option.
+After selecting,choose whether you want it delivered or not.
+On checking out a list will appear with the order summary.
 
 ## Technologies used
 In this project we used HTML ,and to style I used bootstrap css.
