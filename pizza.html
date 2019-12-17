@@ -37,7 +37,7 @@
             <select class="form-control" id="crusta"required>
                 <option value="200" class="Crispy"  >Crispy.......................price@ ksh200</option>
                 <option value="300" class="Stuffed">Stuffed......................price@ ksh300</option>
-                <option value="300" class="Gluten-free">Gluten-free................price@ ksh300</option>
+                <option value="400" class="Gluten-free">Gluten-free................price@ ksh300</option>
 
             </select>
             <label>Please choose the toppings</label>
@@ -52,11 +52,14 @@
 
         
            <input type="radio" name="to" value="60">Beacon
+           <input type="radio" name="cheese" value="20" required>cheese
+           <input type="radio" name="cheese" value="0">without cheese
+
            <br>
          
          <label>Do you want the pizza to be delivered</label>
          <div class="delivered">
-         <input type="radio" name="deliver" value="250" >Yes
+         <input type="radio" name="deliver" value="250" id="yes">Yes
          <input type="radio" name="deliver" value="0" required>No
          </div>
          
@@ -96,6 +99,9 @@
         <div class="titleBeacon">Beacon topping price:
         <div class="showBeacon"> </div>
         </div>
+        <div>Cheese price:
+            <div class="showCheese"></div>
+        </div>
         <div>Delivery Fee
                 <div class="deliveryFee"></div>
             </div>
@@ -116,7 +122,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js">
-    function myFunction(){}
+    
+
     </script>
 
     
