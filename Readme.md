@@ -1,7 +1,7 @@
 ## Application Name
 Neshco Pizza
 
-![](images/pizza.jpg)
+![](css/images/pizza.jpg)
 
 ## Description
 This is website for ordering  pizza of different sizes and toppings depending on the customer's  preference.This project uses html and css to style,also bootstrap is used here.I also used jquery to make it responsive.
